@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pseudo Elements</title>
+	<style>
+		p::after {
+			content:  "This is the para";
+		}
+		p::before {
+			content: "This is the para";
+		}
+		p::first-letter {
+			background-color: red;
+		}
+		p::first-line {
+			color: royalblue;
+		}
+		p::selection {
+			background-color: selmon;
+			color: #fff;
+		}
+		li::marker {
+			color: seagreen;
+			font-size: 30px;
+		}
+		input[type="text"]::placeholder {
+			color: #fff;
+			background-color: slategrey;
+		}
+</head>
+<body>
+	<p>PseudoA paragraph is a series of related sentences developing a central idea,called the topic. Try to topic. Try to think about paragraphs in terms of themetic unity: a paragraph is a sentences or a group of sentences that supports one central, unified idea. Paragraph add one idea at a time to your brother argument.</p>
+	<ul>
+		<li>One</li>
+		<li>Two</li>
+		<li>Three</li>
+	</ul>
+
+	<input type="text" placeholder="Enter the text">
+</body>
+</html>
