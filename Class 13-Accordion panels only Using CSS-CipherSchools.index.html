@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Pseudo Elements</title>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.accordian {
+			margin: 20px;
+		}
+		.accordian .panel {
+			padding: 20px;
+			border: 2px solid #333;
+		}
+		.accordian .panel label {
+			padding: 10px;
+			cursor: pointer;
+			display: block;
+			position: relative;
+			font-weight: bold;
+		}
+		.accordian .panel label::before {
+			content: "";
+			position: absolute;
+			top: 12px;
+			left: 12px;
+			width: 0;
+			height: 0;
+		}
+		.accordian .panel .box {
+			display: none;
+		}
+		.accordian .panel input:checked ~ label {
+			color: purple;
+		}
+		.accordian .panel input:checked ~ label::before {
+			transform: rotate(90deg);
+		}
+		.accordian .panel input:checked ~ .box {
+			display: black;
+			padding: 0 20px 10px 20px;
+		}
+		.accordian .panel input {
+			display: none;
+		}   
+
+
+
+	</style>	
+</head>
+<body>
+	<div class="accordian">
+		<div class="panel">
+			<label for="one-panel">Accordian One</label>
+			<input type="radio" name="one-panel" id="one-panel">
+			<div class="box"
+				<p>
+				A paragraph is a series of related sentences developing a central idea,called the topic. Try to topic. Try to think about paragraphs in terms of themetic unity: a paragraph is a sentences or a group of sentences that supports one central, unified idea. Paragraph add one idea at a time to your brother argument.
+				</p>
+			</div>
+		</div>
+		<div class="panel">
+			<label for="one-panel">Accordian One</label>
+			<input type="radio" name="one-panel" id="one-panel">
+			<div class="box"
+				<p>
+				A paragraph is a series of related sentences developing a central idea,called the topic. Try to topic. Try to think about paragraphs in terms of themetic unity: a paragraph is a sentences or a group of sentences that supports one central, unified idea. Paragraph add one idea at a time to your brother argument.
+				</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
