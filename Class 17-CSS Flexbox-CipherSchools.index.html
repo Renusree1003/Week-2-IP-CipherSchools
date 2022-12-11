@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>CSS Flexbox</title>
+</head>
+
+<body>
+	<style>
+		* {
+			margin: 0;
+			padding: 0;
+			box-sizing: border-box;
+		}
+		.cards-container {
+			width: 100%;
+			display: flex;
+			flex-direction: row-reverse;
+			background: rgb(55, 13, 63);
+
+		}
+		.card {
+			width: 60px;
+			height: 50px;
+			background: #f52e54;
+			color: #fff;
+			text-align: center;
+			margin: 10px;
+			padding: 10px;
+		}
+		.inner-card p {
+			font-size: 14px;
+		}
+		
+
+		}
+	</style>
+	<div class="cards-container">
+		<div class="card">
+			<div class="inner-card">
+				<p>ONE</p>
+			</div>
+		</div>
+		<div class="card">
+			<div class="inner-card">
+				<p>TWO</p>
+			</div>
+		</div>
+		<div class="card">
+			<div class="inner-card">
+				<p>THREE</p>
+			</div>
+		</div>
+		<div class="card">
+			<div class="inner-card">
+				<p>FOUR</p>
+			</div>
+		</div>
+		<div class="card">
+			<div class="inner-card">
+				<p>FIVE</p>
+			</div>
+		</div>
+		<div class="card">
+			<div class="inner-card">
+				<p>SIX</p>
+			</div>
+		</div>
+		<div class="card">
+			<div class="inner-card">
+				<p>SEVEN</p>
+			</div>
+		</div>
+		<div class="card">
+			<div class="inner-card">
+				<p>EIGHT</p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
