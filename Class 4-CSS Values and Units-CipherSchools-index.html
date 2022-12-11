@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+	<title>Paragraphs, Headlines, Small Texts, Subscripts & SuperScripts</title>
+	<style>
+		@import url('/css/style.css'); */
+		p{
+			color:  blue;
+			background-color: bisque;
+			/** Absolute units */
+			width: 20px;
+			/*Relative units*/
+			width: 70vw;
+			margin: 0;
+			line-height: 1.2;
+		}
+		div{
+			transform: rotate(edge);
+			width: calc(100% - 20px);
+			height: 100vh;
+			background-color: url("assets/small.jpg");
+		}
+	</style>
+</head>
+<body>
+	<div>
+		<p><em>Hello everyone,</em></p>
+		<h1 style="color: red;">Welcome to this bootcamp!</h1>
+		<h2 style="color: red;">Welcome to this bootcamp!</h2>
+		<h3 style="color: red;">Welcome to this bootcamp!</h3>
+		<h4 style="color: red;">Welcome to this bootcamp!</h4>
+		<h5>Welcome to this bootcamp!</h5>
+		<h6>Welcome to this bootcamp!</h6>
+	</div>
+
+	<!-- Subscripts -->
+	<p>
+		<strong>H<sub>2</sub>O</strong>
+	</p>
+
+	<!-- SuperScripts -->
+	<p>
+		5<sup>3</sup>
+	</p>
+	<small>All rights reserved</small>
+</body>
+</html>
